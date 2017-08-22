@@ -1,2 +1,10 @@
 <!--createRoom.wxml-->
-<text>createRoom.wxml</text>
+<view class="section">
+  <view class="section__title">游戏人数</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{countarray}}">
+    <view class="picker">
+      当前选择：<text class="countnum">{{countarray[index]}}</text>人
+    </view>
+  </picker>
+</view>
+<view class="extra_content"></view>

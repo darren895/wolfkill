@@ -3,7 +3,6 @@
 var app = getApp()
 Page({
   data: {
-    content: '狼人杀助手'
   },
   //事件处理函数
   createRoom: function() {

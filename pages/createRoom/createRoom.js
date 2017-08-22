@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    countarray:[8,9,10,11,12,13,14,15,16,17,18,19,20],
+    index:0
   },
 
   /**
@@ -26,7 +27,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    wx.setNavigationBarTitle({
+      title: '配置房间'
+    })
   },
 
   /**
@@ -62,5 +65,11 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
   }
 })

@@ -1,1 +1,13 @@
 /* createRoom.wxss */
+view{
+  margin: 5 0 10 5 rpx;
+}
+.countnum{
+  color: #FF8C00;
+}
+.section{
+  font-family: 黑体;
+}
+.section__title{
+  font-size: 17pt;
+}

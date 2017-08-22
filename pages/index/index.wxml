@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <view class="about">
-    <text selectable="false">{{content}}</text>
+    <text selectable="false">狼人杀助手</text>
   </view>
 
   <view class="button-content">
