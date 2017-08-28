@@ -5,7 +5,7 @@
   </view>
 
   <view class="button-content">
-    <button bindtap="createRoom">创建房间</button>
+    <button type="primary" size="default" bindtap="createRoom">创建房间</button>
     <button bindtap="joinRoom">加入房间</button>
   </view>
 </view>

@@ -5,8 +5,11 @@
 .button-content{
   margin-top: 200rpx;
   flex-direction: column;
+  width: 100%;
+ 
 }
 button{
-  margin: 20rpx;
-  font-size: 40rpx;
+  top: 47pt;
+  font-size: 18pt;
+  margin: 10pt;
 }

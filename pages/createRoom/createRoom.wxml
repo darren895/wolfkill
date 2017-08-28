@@ -1,10 +1,38 @@
 <!--createRoom.wxml-->
 <view class="section">
-  <view class="section__title">游戏人数</view>
-  <picker bindchange="bindPickerChange" value="{{index}}" range="{{countarray}}">
+  <view class="section__title">游戏人数</view>  
     <view class="picker">
-      当前选择：<text class="countnum">{{countarray[index]}}</text>人
+      点击选择人数：<text class="countnum">{{sum}}</text>人
     </view>
-  </picker>
 </view>
-<view class="extra_content"></view>
+<view class="extra_content">
+  <text class="extra_title">人员配置</text>
+  <view class="normal_chioce">
+    <picker bindchange="bindPickerChange" value="{{wolfindex}}" range="{{wolfarray}}">
+      <view class="wolf">
+        狼人数量：<text class="countnum">{{wolfarray[wolfindex]}}</text>人
+      </view>
+    </picker>
+    <picker bindchange="bindCityPickerChange" value="{{cityindex}}" range="{{cityarray}}">
+      <view class="wolf">
+        平民数量：<text class="countnum">{{cityarray[cityindex]}}</text>人
+      </view>
+    </picker>
+  </view>
+  <view class="gods_chioce">
+    <block wx:for="{{godmap}}" wx:key="code">
+    <view wx:if="{{!item.checked}}" class="gods unchecked" bindtap="chooseGod" data-code="{{item.code}}">
+      <image  mode="aspectFit" src="http://localhost:8000/static/img/god0{{item.code}}.png"></image>
+      {{item.name}}
+    </view>
+    <view wx:else class="gods"  bindtap="chooseGod" data-code="{{item.code}}">
+      <image  mode="aspectFit" src="http://localhost:8000/static/img/god0{{item.code}}.png"></image>
+      {{item.name}}
+    </view>
+    </block>
+  </view>
+  
+</view>
+<view class="btn-content">
+    <button type="primary" bindtap="bindsubmit">提交</button>
+</view>

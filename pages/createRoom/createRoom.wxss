@@ -1,13 +1,70 @@
 /* createRoom.wxss */
+page{
+background-color: #efeff4;
+}
 view{
-  margin: 5 0 10 5 rpx;
+  margin: 5rpx 10rpx 5rpx 10rpx;
+  font-family: 黑体;
+  background-color: #ffffff;
+  padding: 2px;
+}
+.section{
+  margin-top: 20rpx;
 }
 .countnum{
   color: #FF8C00;
 }
-.section{
-  font-family: 黑体;
-}
 .section__title{
   font-size: 17pt;
+}
+.picker{
+  font-size: 13pt;
+}
+.extra_content{
+  margin-top: 20rpx;
+  padding-top: 10rpx;
+  border-top: 1px solid #e7e7eb;
+}
+.extra_title{
+  font-size: 17pt;
+}
+.wolf{
+  flex-direction: row;
+}
+.normal_chioce input{
+  flex: inherit;
+  width: 30pt;
+  display: inline-flex;
+}
+.math-btn{
+  display: inline;
+  position: relative;
+  padding: 1px 10rpx 1px 10rpx;
+}
+.gods_chioce{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+.gods_chioce .gods{
+  border: 1px solid #e3e3e7;
+  width: 31%;
+  height: auto;
+  margin: 0px;
+  text-align: center;
+  
+}
+.gods_chioce .gods image{
+  position: inherit;
+  width: 100%;
+  height: 100px;
+}
+.gods_chioce .unchecked{
+  background: #efeffe;
+}
+.btn-content{
+  margin-top: 20rpx;
 }
